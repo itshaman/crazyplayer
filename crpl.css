@@ -1,0 +1,44 @@
+﻿/*CrazyPlayer Style*/
+#crazyPlayer{
+	width:100px;
+	height:100px;
+	border-radius:2px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	box-shadow:2px 0px 3px #CCC;
+	background:#EEE url('fm100x100.jpg'); /*put here some real*/
+	margin:10px;
+}
+.play:after, .pause:after{
+	content:'';
+	display:block;
+	width:48px;
+	height:48px;
+	background:url('pl_bt.png');
+	position:absolute;
+	top:25%;
+	left:25%;
+}
+.pause:after {
+	transform:scale(0.5,0.5);
+	top:50%;
+	left:50%;
+	
+}
+.play:after {
+	background-position:0px 0px
+}
+.play:hover:after {
+	background-position:0px -48px
+}
+.pause {
+	
+	
+}
+.pause:after{
+	background-position: 0px -96px
+}
+.pause:hover:after{
+background-position: 0px -144px
+}
